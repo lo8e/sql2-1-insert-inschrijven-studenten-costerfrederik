@@ -1,3 +1,4 @@
-    UPDATE studenten
-    SET geboortedatum= '2001-05-20'
-    WHERE geboortedatum= '2002-05-20';
+use lo8e_sql2;
+UPDATE studenten
+SET actief = false
+WHERE inschrijvings_datum <= '2017-01-01';
